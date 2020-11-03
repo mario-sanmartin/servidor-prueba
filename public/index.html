@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Servidor de Pruebas</title>
+    <title>Servidor de Pruebas y Dom</title>
 </head>
 <body class="bg-success">
-
-    <p id="papi"></p>
+        <h1 id="titulo">titilito</h1>
+        <p id="parra">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur corrupti placeat, porro sint modi enim quasi, rerum quisquam, sit inventore ratione eius fuga omnis harum. Culpa sequi impedit illum eveniet?</p>
+        <p id="papi"></p>
     <div class="container bg-warning text-white rounded">
         <h1 class="text-center">Js funcional</h1>
         <ul>
@@ -17,8 +18,55 @@
             <li>Map</li>
         </ul>
     </div>
+    <button id="boton" class="btn btn-info ml-4">NaN</button>
     
+    <div class="container">
+        <div class="section">
+            <button id="botoncillo"  class="btn btn-danger my-3">Elfos</button>
+            
+            <table class="table bg-dark text-white text-center table-bordered">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Padre</th>
+                    </tr>
+                </thead>
+                <tbody id="res">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-    <script src="./main.js"></script>
+        <script>
+           var h1 = document.getElementById("titulo");
+           console.log(h1.innerHTML);
+        //    h1.innerHTML = 'Soy tu futuro';
+            h1.style.color = "red";
+            h1.style.background = "yellow";
+
+            var parra = document.getElementById("parra");
+            parra.style.color = "pink";
+
+            var botoncito = document.getElementById("boton");
+           
+            function cambiar(){
+                parra.style.color = "brown";
+            }
+            botoncito.onclick = cambiar;
+
+            botoncito.addEventListener('click',function(){
+                console.log('Me tocaste cochino');
+            });
+            botoncito.addEventListener('mouseover',function(){
+                console.log("He detectado una rata");
+            })
+        </script>
+    <!-- <script src="./main.js"></script> -->
+    <script src="./main1.js"></script>
+
 </body>
 </html>
