@@ -111,15 +111,6 @@ console.log(plano);
 
 
 
-
-
-
-
-
-
-
-
-
 //*********************/
 //PROMESAS
 const p1 = Promise.resolve(1)

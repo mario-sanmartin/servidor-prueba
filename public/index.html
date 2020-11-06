@@ -27,12 +27,14 @@
             <table class="table bg-dark text-white text-center table-bordered">
                 <thead>
                     <tr>
+                        <th>Id</th>
                         <th>Nombre</th>
                         <th>Padre</th>
                     </tr>
                 </thead>
                 <tbody id="res">
                     <tr>
+                        <td></td>
                         <td></td>
                         <td></td>
                     </tr>
@@ -64,6 +66,11 @@
             botoncito.addEventListener('mouseover',function(){
                 console.log("He detectado una rata");
             })
+
+        const numeros = [1,2,5,6,7,8,8];
+
+        const resultado = numeros.reduce((acc,val)=> acc + val);
+        console.log('resultado Reduce' ,resultado);
         </script>
     <!-- <script src="./main.js"></script> -->
     <script src="./main1.js"></script>

@@ -20,11 +20,17 @@ function traerElfos(){
             res.innerHTML = '';
 
         //   const nuevo =  datos.filter(x => x.nombre == 'Feanor');
-            const mapita = datos.map(x => x.nombre);
-            for(let elf of mapita){
+            // const mapita = datos.map(x => x.nombre);
+            const poto = datos;
+
+
+            for(let elf of poto){
+            // for(let elf of nuevo){
+            // for(let elf of mapita){
                 res.innerHTML += `
                 <tr>
-                    <td>${elf}</td>
+                    <td>${elf.id}</td>
+                    <td>${elf.nombre}</td>
                     <td>${elf.Padre}</td>
                 </tr>
                 `
@@ -33,3 +39,4 @@ function traerElfos(){
     }
 
 }
+{/* <td>${elf.nombre}</td> */}

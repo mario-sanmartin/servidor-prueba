@@ -1,14 +1,22 @@
 [
     {
+        "id": 1,
         "nombre": "Feanor",
         "Padre": "Finwe"
     },
     {
+        "id": 2,
         "nombre": "Amrod",
         "Padre": "Finwe"
     },
     {
+        "id": 3,
         "nombre": "Amras",
+        "Padre": "Finwe"
+    },
+    {
+        "id": 4,
+        "nombre": "Celebron",
         "Padre": "Finwe"
     }
     
